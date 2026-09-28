@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Here</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- FontAwesome for icons -->
+</head>
+<body>
+  <div class="container">
+    <h1>Weather</h1>
+    <div class="search">
+      <input type="text" id="locationinput" placeholder="Enter city" />
+      <button type="button" onclick="search()"><i class="fas fa-search"></i> Search</button>
+    </div>
+    <section>
+      <div id="City">Dhankuta</div>
+      <div id="Date">Monday, April 7</div>
+      <div>
+        <span id="weatherCondition">sunny</span>
+        <span id="weatherIcon"><i class="fas fa-sun"></i></span>
+      </div>
+      <div id="temp">Temperature: --°C</div>
+      <div id="humid">Humidity: --%</div>
+      <div id="pressure">Pressure: -- hPa</div>
+      <div id="windSpeed">Wind Speed: -- km/h</div>
+      <div id="windDirection">winddirection--°</div>
+      <div id="weatherIcon">weatherIcon</div>
+      <div id="todayDate">todayDate</div>
+    </section>
+</div>
+<script src="style.js"></script>
+</body>
+</html>

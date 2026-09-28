@@ -1,0 +1,162 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:calc();
+}
+
+/* Body and container */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #d8a0ce;
+  color: #3333336c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-position: center ;
+  background-repeat: none;
+  background-image: url(https://cazloyd.com/wp-content/uploads/2023/09/family-holiday-arctic.jpg.webp)
+}
+
+.container {
+  background-color:rgb(148, 118, 156);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(135,206,250);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Header */
+  h1 {
+    font-size: 2em;
+    margin-bottom: 40px;
+    color: #ff9900;
+  }
+  
+  /* Search Section */
+  .search {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  
+  #locationinput {
+    padding: 10px;
+    font-size: 1em;
+    width: 70%;
+    border: 1px solid #dfe833;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #4485e0;
+    color: rgb(134, 194, 232);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1em;
+  }
+  
+  button:hover {
+    background-color: #0057b315;
+  }
+  
+  button i {
+    margin-right: 8px;
+  }
+  
+  /* Weather Info Section */
+  section {
+    margin-top: 20px;
+  }
+  
+  #City {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #f2e8e8;
+    margin-bottom: 10px;
+  }
+  
+  #Date{
+    font-size: 1.2em;
+    color: #82caff;
+    margin-bottom: 15px;
+  }
+  #weatherCondition {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #e5f047;
+    margin-bottom: 10px;
+  }
+  
+  #weatherIcon img {
+    width: 100px;
+    height: 50px;
+    margin-top: 10px;
+  }
+  
+  #temp, #humid, #pressure, #windSpeed, #windDirection{
+    font-size: 1em;
+    margin: 5px 0;
+    color: #96d7fa;
+  }
+  #weatherIcon{
+    font-size: 1em;
+    margin: 5px 0;
+    color: #f2e8e8;
+  }
+  #temperature {
+    font-weight: bold;
+    color: #d6e65f;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 480px) {
+    .container {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    #locationinput {
+      width: 50%;
+    }
+  
+    button {
+      font-size: 0.9em;
+      padding: 8px 12px;
+    }
+  
+    h1 {
+      font-size: 1.8em;
+    }
+  }
+}
+  
+#temperature {
+  font-weight: bold;
+  color: #f8ef46;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+  .container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  #locationinput {
+    width: 60%;
+  }
+
+  button {
+    font-size: 0.9em;
+    padding: 8px 12px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+}
